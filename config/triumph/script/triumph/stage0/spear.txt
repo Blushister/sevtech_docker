@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.spear.title")
+
+setIcon("progressiontweaks:spear")
+
+setTranslatedDescription("advancements.stage0.spear.description")
+
+addParent("triumph:stage0/weaponize")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("progressiontweaks:spear")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

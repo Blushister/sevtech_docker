@@ -1,0 +1,15 @@
+setTranslatedTitle("advancements.stage4.root.title")
+
+setIcon("industrialforegoing:plastic")
+
+setTranslatedDescription("advancements.stage4.root.description")
+
+setBackground("immersiveengineering:textures/blocks/sheetmetal_steel.png")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+//Criteria
+criteria = addCriteria("completedStage1", "triumph:completed_advancement")
+criteria.setString("triumph:stage3/plastic")

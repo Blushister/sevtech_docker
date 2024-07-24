@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.electrumjetpack.title")
+
+setIcon("ironjetpacks:electrum_jetpack")
+
+setTranslatedDescription("advancements.stage5.electrumjetpack.description")
+
+addParent("triumph:stage5/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("ironjetpacks:electrum_jetpack")
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

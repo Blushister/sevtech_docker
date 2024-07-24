@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.chest.title")
+
+setIcon("minecraft:chest")
+
+setTranslatedDescription("advancements.stage1.chest.description")
+
+addParent("triumph:stage1/crafting")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("brokeLog", "minecraft:inventory_changed")
+criteria.setItem("minecraft:chest", 0)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

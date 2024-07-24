@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.adapter.title")
+
+setIcon("poweradapters:mj")
+
+setTranslatedDescription("advancements.stage4.adapter.description")
+
+addParent("triumph:stage4/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("poweradapters:mj")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage4/root")

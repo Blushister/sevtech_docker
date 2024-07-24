@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.gearbox.title")
+
+setIcon("betterwithmods:wooden_gearbox")
+
+setTranslatedDescription("advancements.stage1.gearbox.description")
+
+addParent("triumph:stage1/waterwheel")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("betterwithmods:wooden_gearbox")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

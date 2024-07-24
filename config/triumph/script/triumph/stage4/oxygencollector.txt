@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.oxygencollector.title")
+
+setIcon("galacticraftcore:collector")
+
+setTranslatedDescription("advancements.stage4.oxygencollector.description")
+
+addParent("triumph:stage4/compressor")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("galacticraftcore:collector")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage4/root")

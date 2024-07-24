@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.enderalloy3.title")
+
+setIcon("enderutilities:enderpart", 2)
+
+setTranslatedDescription("advancements.stage4.enderalloy3.description")
+
+addParent("triumph:stage4/theend")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("enderutilities:enderpart", 2)
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

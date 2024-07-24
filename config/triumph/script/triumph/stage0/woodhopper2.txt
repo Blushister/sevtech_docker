@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage0.woodhopper2.title")
+
+setIcon("primal_tech:wooden_hopper")
+
+setTranslatedDescription("advancements.stage0.woodhopper2.description")
+
+addParent("triumph:stage0/woodhopper1")
+setRequiresParents()
+
+setFrameType("Goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:wooden_hopper")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

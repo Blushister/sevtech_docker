@@ -1,0 +1,24 @@
+{
+    "modid": "betterwithmods",
+    "foods": {
+        "INGREDIENTS": [
+            "raw_egg",
+            "raw_kebab",
+            "raw_omelet",
+            "raw_pastry",
+            "raw_scrambled_egg",
+            {
+                "item": "raw_pastry",
+                "data": 1
+            },
+            {
+                "item": "raw_pastry",
+                "data": 2
+            }
+        ]
+    },
+    "oven_recipes": {
+        "raw_omelet": "cooked_omelet",
+        "raw_pastry:4": "apple_pie"
+    }
+}

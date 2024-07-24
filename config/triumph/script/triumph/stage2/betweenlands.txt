@@ -1,0 +1,16 @@
+setTranslatedTitle("advancements.stage2.betweenlands.title")
+
+setIcon("thebetweenlands:swamp_talisman")
+
+setTranslatedDescription("advancements.stage2.betweenlands.description")
+
+addParent("triumph:stage2/root")
+
+//Criteria
+criteria = addCriteria("entered_nether", "minecraft:changed_dimension")
+criteria.setDimensionDestination("betweenlands")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

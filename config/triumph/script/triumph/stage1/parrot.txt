@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.parrot.title")
+
+setIcon("minecraft:feather")
+
+setTranslatedDescription("advancements.stage1.parrot.description")
+
+addParent("triumph:stage1/statue")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("tamed_horse", "minecraft:tame_animal")
+criteria.setEntityType("minecraft:parrot")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage1/root")

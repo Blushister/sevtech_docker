@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.soundmuffler.title")
+
+setIcon("supersoundmuffler:sound_muffler")
+
+setTranslatedDescription("advancements.stage3.soundmuffler.description")
+
+addParent("triumph:stage3/redstone")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("supersoundmuffler:sound_muffler")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

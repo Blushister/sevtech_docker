@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.atlas.title")
+
+setIcon("antiqueatlas:empty_antique_atlas")
+
+setTranslatedDescription("advancements.stage0.atlas.description")
+
+addParent("triumph:stage0/workblade")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("book1", "minecraft:inventory_changed")
+criteria.setItem("antiqueatlas:empty_antique_atlas")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

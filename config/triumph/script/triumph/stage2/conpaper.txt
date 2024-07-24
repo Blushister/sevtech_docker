@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage2.conpaper.title")
+
+setIcon("astralsorcery:itemconstellationpaper")
+
+setTranslatedDescription("advancements.stage2.conpaper.description")
+
+addParent("triumph:stage2/root")
+setRequiresParents()
+
+setFrameType("goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("astralsorcery:itemconstellationpaper")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

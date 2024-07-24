@@ -1,0 +1,15 @@
+setTranslatedTitle("advancements.stage3.root.title")
+
+setIcon("rustic:iron_lantern")
+
+setTranslatedDescription("advancements.stage3.root.description")
+
+setBackground("minecraft:textures/blocks/soul_sand.png")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+//Criteria
+criteria = addCriteria("completedStage1", "triumph:completed_advancement")
+criteria.setString("triumph:stage2/stevescarts")

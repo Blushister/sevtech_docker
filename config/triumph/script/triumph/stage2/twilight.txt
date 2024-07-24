@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage2.twilight.title")
+
+setIcon("astralsorcery:itemcraftingcomponent", 1)
+
+setTranslatedDescription("advancements.stage2.twilight.description")
+
+addParent("triumph:stage2/astable2")
+setRequiresParents()
+
+setFrameType("goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("astralsorcery:itemcraftingcomponent", 1)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

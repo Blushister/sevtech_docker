@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage0.totemic.title")
+
+setIcon("totemic:drum")
+
+setTranslatedDescription("advancements.stage0.totemic.description")
+
+addParent("triumph:stage0/leather")
+setRequiresParents()
+
+//Criteria
+criteria1 = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria1.setItem("totemic:rattle")
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("totemic:flute")
+
+criteria3 = addCriteria("hasRock3", "minecraft:inventory_changed")
+criteria3.setItem("totemic:drum")
+
+//Rewards
+setRewardItem("totemic:totempedia", 0, 1)
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

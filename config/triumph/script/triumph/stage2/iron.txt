@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.iron.title")
+
+setIcon("minecraft:iron_ingot")
+
+setTranslatedDescription("advancements.stage2.iron.description")
+
+addParent("triumph:stage2/dowsingrod")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("brokeLog", "triumph:player_break_block")
+criteria.setBlock("geolosys:ore", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage0.baykok.title")
+
+setIcon("totemic:baykok_bow")
+
+setTranslatedDescription("advancements.stage0.baykok.description")
+
+addParent("triumph:stage0/buffalo")
+setRequiresParents()
+
+setRequirements("any")
+
+//Criteria
+criteria = addCriteria("killed_spider", "minecraft:player_killed_entity")
+criteria.setEntityType("totemic:baykok")
+
+criteria1 = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria1.setItem("totemic:baykok_bow")
+
+//Rewards
+setRewardExperience(16)
+setRewardFunction("triumph:prestige_add_100")
+setRewardFunction("triumph:baykok_trigger")
+
+visibleIf("triumph:stage0/root")

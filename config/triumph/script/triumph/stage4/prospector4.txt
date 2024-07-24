@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.prospector4.title")
+
+setIcon("prospectors:prospector_high")
+
+setTranslatedDescription("advancements.stage4.prospector4.description")
+
+addParent("triumph:stage4/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("prospectors:prospector_high")
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

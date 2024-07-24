@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.extendedcraftingbasic.title")
+
+setIcon("extendedcrafting:table_basic")
+
+setTranslatedDescription("advancements.stage2.extendedcraftingbasic.description")
+
+addParent("triumph:stage2/starpowder")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("extendedcrafting:table_basic")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

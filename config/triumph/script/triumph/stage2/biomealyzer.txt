@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.biomealyzer.title")
+
+setIcon("infoaccessories:info_accessory", 6)
+
+setTranslatedDescription("advancements.stage2.biomealyzer.description")
+
+addParent("triumph:stage2/compass")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("infoaccessories:info_accessory", 6)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

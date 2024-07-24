@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.creosote.title")
+
+setIcon("immersiveengineering:stone_device")
+
+setTranslatedDescription("advancements.stage3.creosote.description")
+
+addParent("triumph:stage3/iehammer")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("immersiveengineering:material", 6)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

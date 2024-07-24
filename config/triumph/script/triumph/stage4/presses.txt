@@ -1,0 +1,23 @@
+setTranslatedTitle("advancements.stage4.presses.title")
+
+setIcon("appliedenergistics2:material", 14)
+
+setTranslatedDescription("advancements.stage4.presses.description")
+
+addParent("triumph:stage4/theend")
+setRequiresParents()
+
+//Criteria
+criteria1 = addCriteria("hasRock1", "minecraft:inventory_changed")
+criteria1.setItem("appliedenergistics2:material", 14)
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("appliedenergistics2:material", 15)
+
+criteria3 = addCriteria("hasRock3", "minecraft:inventory_changed")
+criteria3.setItem("appliedenergistics2:material", 19)
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

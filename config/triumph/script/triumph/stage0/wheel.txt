@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.wheel.title")
+
+setIcon("astikorcarts:wheel")
+
+setTranslatedDescription("advancements.stage0.wheel.description")
+
+addParent("triumph:stage0/saddle")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("astikorcarts:wheel", 0)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.galgadorian.title")
+
+setIcon("stevescarts:modulecomponents", 49)
+
+setTranslatedDescription("advancements.stage3.galgadorian.description")
+
+addParent("triumph:stage3/standardhull")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("stevescarts:modulecomponents", 49)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

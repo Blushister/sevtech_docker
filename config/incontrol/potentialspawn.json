@@ -1,0 +1,105 @@
+[
+    {
+        "dimension": 0,
+        "block": ["minecraft:grass", "minecraft:sand", "minecraft:sand@1"],
+        "biome": ["Desert", "Savanna", "Forest", "Beach", "Red Desert"],
+        "mobs": [
+            {
+                "mob": "Horse",
+                "weight": 1,
+                "groupcountmin": 2,
+                "groupcountmax": 6
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": ["minecraft:water"],
+        "mobs": [
+            {
+                "mob": "Squid",
+                "weight": 1,
+                "groupcountmin": 2,
+                "groupcountmax": 6
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": ["minecraft:grass", "minecraft:sand", "minecraft:sand@1"],
+        "biome": [
+            "Jungle",
+            "Swamp",
+            "Savanna",
+            "abyssalcraft:coralium_infested_swamp"
+        ],
+        "mobs": [
+            {
+                "mob": "Parrot",
+                "weight": 1,
+                "groupcountmin": 1,
+                "groupcountmax": 2
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": "minecraft:water",
+        "mobs": [
+            {
+                "mob": "primal:shark_hammerhead",
+                "weight": 100,
+                "groupcountmin": 1,
+                "groupcountmax": 1
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": "minecraft:water",
+        "mobs": [
+            {
+                "mob": "jaff:cod",
+                "weight": 800,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": "minecraft:water",
+        "mobs": [
+            {
+                "mob": "jaff:clownfish",
+                "weight": 240,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": "minecraft:water",
+        "mobs": [
+            {
+                "mob": "jaff:pufferfish",
+                "weight": 160,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ]
+    },
+    {
+        "dimension": 0,
+        "block": "minecraft:water",
+        "mobs": [
+            {
+                "mob": "jaff:salmon",
+                "weight": 800,
+                "groupcountmin": 1,
+                "groupcountmax": 3
+            }
+        ]
+    }
+]

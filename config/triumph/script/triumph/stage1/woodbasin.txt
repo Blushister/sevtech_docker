@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.woodbasin.title")
+
+setIcon("primal_tech:wooden_basin")
+
+setTranslatedDescription("advancements.stage1.woodbasin.description")
+
+addParent("triumph:stage1/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:wooden_basin")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

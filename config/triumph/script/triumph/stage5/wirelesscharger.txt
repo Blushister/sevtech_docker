@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.wirelesscharger.title")
+
+setIcon("chargers:wireless_charger", 0)
+
+setTranslatedDescription("advancements.stage5.wirelesscharger.description")
+
+addParent("triumph:stage5/charger3")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("chargers:wireless_charger", 0)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

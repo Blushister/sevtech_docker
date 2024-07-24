@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage2.lightwell.title")
+
+setIcon("astralsorcery:blockwell")
+
+setTranslatedDescription("advancements.stage2.lightwell.description")
+
+addParent("triumph:stage2/conpaper")
+setRequiresParents()
+
+setFrameType("goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("astralsorcery:blockwell")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.pedestal.title")
+
+setIcon("abyssalcraft:energypedestal")
+
+setTranslatedDescription("advancements.stage1.pedestal.description")
+
+addParent("triumph:stage1/statue")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("abyssalcraft:energypedestal")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

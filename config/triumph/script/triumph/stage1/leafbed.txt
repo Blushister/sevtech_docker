@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.leafbed.title")
+
+setIcon("primal_tech:leaf_bed")
+
+setTranslatedDescription("advancements.stage1.leafbed.description")
+
+addParent("triumph:stage1/crafting")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:leaf_bed")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

@@ -1,0 +1,22 @@
+setTranslatedTitle("advancements.stage1.dung.title")
+
+setIcon("dungpipe:dung_pipe")
+
+setTranslatedDescription("advancements.stage1.dung.description")
+
+addParent("triumph:stage1/claybarrel")
+setRequiresParents()
+
+setRequirements("any")
+
+//Criteria
+criteria1 = addCriteria("placedDirt1", "minecraft:placed_block")
+criteria1.setBlock("dungpipe:dung_pipe")
+
+criteria2 = addCriteria("placedDirt2", "minecraft:placed_block")
+criteria2.setBlock("dungpipe:sewer_pipe")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.mars.title")
+
+setIcon("tconstruct:edible", 3)
+
+setTranslatedDescription("advancements.stage5.mars.description")
+
+addParent("triumph:stage5/t2rocket")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("entered_nether", "minecraft:changed_dimension")
+criteria.setDimensionDestination("planet.mars")
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

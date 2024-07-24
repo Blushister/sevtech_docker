@@ -1,0 +1,15 @@
+setTranslatedTitle("advancements.stage5.root.title")
+
+setIcon("chisel:futura", 2)
+
+setTranslatedDescription("advancements.stage5.root.description")
+
+setBackground("chisel:textures/blocks/tyrian/diagonal.png")
+
+setShowToast(false)
+
+setAnnounceToChat(true)
+
+//Criteria
+criteria = addCriteria("completedStage1", "triumph:completed_advancement")
+criteria.setString("triumph:stage4/moon")

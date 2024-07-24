@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.projector.title")
+
+setIcon("immersivepetroleum:schematic", 0)
+
+setTranslatedDescription("advancements.stage3.projector.description")
+
+addParent("triumph:stage3/iebook")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("immersivepetroleum:schematic", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage2.astable2.title")
+
+setIcon("astralsorcery:blockaltar", 1)
+
+setTranslatedDescription("advancements.stage2.astable2.description")
+
+addParent("triumph:stage2/lightwell")
+setRequiresParents()
+
+setFrameType("goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "triumph:right_click_block")
+criteria.setBlock("astralsorcery:blockaltar", 1)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

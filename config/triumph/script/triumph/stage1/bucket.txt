@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.bucket.title")
+
+setIcon("ceramics:clay_bucket")
+
+setTranslatedDescription("advancements.stage1.bucket.description")
+
+addParent("triumph:stage1/turntable")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("ceramics:clay_bucket")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

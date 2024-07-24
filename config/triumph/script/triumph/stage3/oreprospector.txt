@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.oreprospector.title")
+
+setIcon("prospectors:prospector_med")
+
+setTranslatedDescription("advancements.stage3.oreprospector.description")
+
+addParent("triumph:stage3/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("prospectors:prospector_med")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

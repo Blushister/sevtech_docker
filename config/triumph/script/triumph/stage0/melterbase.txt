@@ -1,0 +1,28 @@
+setTranslatedTitle("advancements.stage0.melterbase.title")
+
+setIcon("tcomplement:porcelain_melter", 8)
+
+setTranslatedDescription("advancements.stage0.melterbase.description")
+
+addParent("triumph:stage0/flamehopper")
+setRequiresParents()
+
+setFrameType("Goal")
+setRequirements("any")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria1 = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria1.setItem("tcomplement:porcelain_melter", 8)
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("tcomplement:melter", 8)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

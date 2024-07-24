@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.horsechopper.title")
+
+setIcon("horsepower:chopper")
+
+setTranslatedDescription("advancements.stage0.horsechopper.description")
+
+addParent("triumph:stage0/horsepower")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("horsepower:chopper")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

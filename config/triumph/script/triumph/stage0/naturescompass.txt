@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.naturescompass.title")
+
+setIcon("naturescompass:naturescompass")
+
+setTranslatedDescription("advancements.stage0.naturescompass.description")
+
+addParent("triumph:stage0/workstump")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("naturescompass:naturescompass")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

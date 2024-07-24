@@ -1,2 +1,2 @@
 # sevtech_docker
-DockerFile pour 
+DockerFile pour le modpack SevTech

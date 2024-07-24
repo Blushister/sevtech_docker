@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.stage1.stoneanvil.title")
+
+setIcon("primal_tech:stone_anvil")
+
+setTranslatedDescription("advancements.stage1.stoneanvil.description")
+
+addParent("triumph:stage1/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:stone_anvil")
+
+//Rewards
+setRewardItem("primal_tech:stone_mallet", 0, 1)
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

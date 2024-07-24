@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.paper.title")
+
+setIcon("minecraft:paper")
+
+setTranslatedDescription("advancements.stage2.paper.description")
+
+addParent("triumph:stage2/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:paper")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

@@ -1,0 +1,6 @@
+gamestage silentremove @p one_mob
+gamestage silentadd @p two_mob
+gamestage add @p two
+summon minecraft:fireworks_rocket ~ ~ ~
+astralsorcery research @p BASIC_CRAFT
+mpa notify @p stage_two

@@ -1,0 +1,23 @@
+setTranslatedTitle("advancements.stage3.distillation2.title")
+
+setIcon("forge:bucketfilled", 0, {FluidName: "gasoline", Amount: 1000})
+
+setTranslatedDescription("advancements.stage3.distillation2.description")
+
+addParent("triumph:stage3/naphtha")
+setRequiresParents()
+
+//Criteria
+criteria1 = addCriteria("hasRock1", "minecraft:inventory_changed")
+criteria1.addItem("forge:bucketfilled", 0, {FluidName:"gasoline",Amount:1000})
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.addItem("forge:bucketfilled", 0, {FluidName:"kerosene",Amount:1000})
+
+criteria3 = addCriteria("hasRock3", "minecraft:inventory_changed")
+criteria3.addItem("forge:bucketfilled", 0, {FluidName:"lubricant",Amount:1000})
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

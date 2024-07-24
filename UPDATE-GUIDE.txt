@@ -1,0 +1,28 @@
+How to Upgrade Your SevTech Server:
+
+1. MAKE A BACKUP OF YOUR WORLD AND PRESTIGE FODLER THEN STORE IT ELSEWHERE. (Make sure it's safe from the Creepers)
+
+2. Download the latest version from CurseForge.  
+   **Note: the server files come out after the client is, and is published as quickly as possible, but there are delays in the approval process. If it's not listed, be patient.
+   **Note: The server files on the ATLauncher ARE NOT the same as the provided ones on CurseForge.  They are just curated from the client itself.
+
+3. Shut down your server.
+
+4. In your server's directory, locate the following directories and delete them:
+        - config
+        - journeymap
+        - mods
+        - resources
+        - scripts
+        - structures
+
+	DON'T DELETE THE WORLD OR PRESTIGE FOLDER
+        
+5. Copy the contents from the Zip file you downloaded to your server folder. Overwrite any files requested.
+
+6. Run the Install script for your system to update Forge to the version needed.
+
+7. Upload the entire libraries folder to the server also. As changes could of been made and you'll need them otherwise you'll have bad times.
+
+8. Run your server. Profit!
+

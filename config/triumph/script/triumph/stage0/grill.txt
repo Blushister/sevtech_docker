@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.grill.title")
+
+setIcon("primal_tech:stone_grill")
+
+setTranslatedDescription("advancements.stage0.grill.description")
+
+addParent("triumph:stage0/firepit")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:stone_grill")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

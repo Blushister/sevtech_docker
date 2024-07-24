@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.standardhull.title")
+
+setIcon("stevescarts:cartmodule", 38)
+
+setTranslatedDescription("advancements.stage3.standardhull.description")
+
+addParent("triumph:stage3/woodhull")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("stevescarts:cartmodule", 38)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

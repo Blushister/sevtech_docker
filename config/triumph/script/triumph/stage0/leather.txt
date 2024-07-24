@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.leather.title")
+
+setIcon("minecraft:leather")
+
+setTranslatedDescription("advancements.stage0.leather.description")
+
+addParent("triumph:stage0/fluidbladder")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:leather")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

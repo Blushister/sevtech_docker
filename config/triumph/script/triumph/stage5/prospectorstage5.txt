@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.prospectorstage5.title")
+
+setIcon("prospectors:prospector_best", 0)
+
+setTranslatedDescription("advancements.stage5.prospectorstage5.description")
+
+addParent("triumph:stage5/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("prospectors:prospector_best", 0)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

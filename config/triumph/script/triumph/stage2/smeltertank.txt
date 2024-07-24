@@ -1,0 +1,22 @@
+setTranslatedTitle("advancements.stage2.smeltertank.title")
+
+setIcon("tcomplement:porcelain_tank")
+
+setTranslatedDescription("advancements.stage2.smeltertank.description")
+
+addParent("triumph:stage2/iron")
+setRequiresParents()
+
+setRequirements("any")
+
+//Criteria
+criteria1 = addCriteria("hasRock1", "minecraft:inventory_changed")
+criteria1.setItem("tcomplement:porcelain_tank")
+
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("tconstruct:seared_tank")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

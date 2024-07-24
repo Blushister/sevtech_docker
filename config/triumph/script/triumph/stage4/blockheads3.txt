@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.blockheads3.title")
+
+setIcon("cookingforblockheads:cooking_table")
+
+setTranslatedDescription("advancements.stage4.blockheads3.description")
+
+addParent("triumph:stage4/blockheads2")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("cookingforblockheads:cooking_table")
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

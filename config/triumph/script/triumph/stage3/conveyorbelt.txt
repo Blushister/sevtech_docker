@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.conveyorbelt.title")
+
+setIcon("immersiveengineering:conveyor", 0, {conveyorType: "immersiveengineering:uncontrolled"})
+
+setTranslatedDescription("advancements.stage3.conveyorbelt.description")
+
+addParent("triumph:stage3/workbench")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.addItem("immersiveengineering:conveyor", 0, {conveyorType: "immersiveengineering:conveyor"})
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

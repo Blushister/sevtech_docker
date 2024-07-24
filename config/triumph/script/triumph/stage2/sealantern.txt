@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.sealantern.title")
+
+setIcon("minecraft:sea_lantern", 0)
+
+setTranslatedDescription("advancements.stage2.sealantern.description")
+
+addParent("triumph:stage2/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("minecraft:sea_lantern", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

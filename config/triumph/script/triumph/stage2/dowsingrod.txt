@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.dowsingrod.title")
+
+setIcon("prospectors:prospector_low")
+
+setTranslatedDescription("advancements.stage2.dowsingrod.description")
+
+addParent("triumph:stage2/glass")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("prospectors:prospector_low")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

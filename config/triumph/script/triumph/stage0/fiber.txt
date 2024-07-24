@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.fiber.title")
+
+setIcon("primal:plant_fiber")
+
+setTranslatedDescription("advancements.stage0.fiber.description")
+
+addParent("triumph:stage0/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("primal:plant_fiber")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

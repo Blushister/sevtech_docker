@@ -1,0 +1,22 @@
+setTranslatedTitle("advancements.stage1.tchannel.title")
+
+setIcon("ceramics:channel")
+
+setTranslatedDescription("advancements.stage1.tchannel.description")
+
+addParent("triumph:stage1/root")
+setRequiresParents()
+
+setRequirements("any")
+
+//Criteria
+criteria1 = addCriteria("crafted1", "minecraft:inventory_changed")
+criteria1.setItem("ceramics:channel")
+
+criteria2 = addCriteria("crafted2", "minecraft:inventory_changed")
+criteria2.setItem("tconstruct:channel")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

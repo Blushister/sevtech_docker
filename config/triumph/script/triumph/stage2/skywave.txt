@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.skywave.title")
+
+setIcon("astralsorcery:itemskyresonator")
+
+setTranslatedDescription("advancements.stage2.skywave.description")
+
+addParent("triumph:stage2/conpaper")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("astralsorcery:itemskyresonator")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

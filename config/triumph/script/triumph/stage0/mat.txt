@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.mat.title")
+
+setIcon("cyclicmagic:sleeping_mat")
+
+setTranslatedDescription("advancements.stage0.mat.description")
+
+addParent("triumph:stage0/leather")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("cyclicmagic:sleeping_mat")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

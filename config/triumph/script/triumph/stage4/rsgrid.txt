@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.rsgrid.title")
+
+setIcon("refinedstorage:grid")
+
+setTranslatedDescription("advancements.stage4.rsgrid.description")
+
+addParent("triumph:stage4/inscriber")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("refinedstorage:grid")
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

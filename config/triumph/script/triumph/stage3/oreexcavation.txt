@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.oreexcavation.title")
+
+setIcon("oeintegration:excavatemodifier")
+
+setTranslatedDescription("advancements.stage3.oreexcavation.description")
+
+addParent("triumph:stage3/oreprospector")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("oeintegration:excavatemodifier")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

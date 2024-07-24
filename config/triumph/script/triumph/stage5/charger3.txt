@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.charger3.title")
+
+setIcon("chargers:charger", 2)
+
+setTranslatedDescription("advancements.stage5.charger3.description")
+
+addParent("triumph:stage5/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("chargers:charger", 2)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

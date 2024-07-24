@@ -1,0 +1,19 @@
+setTranslatedTitle("advancements.stage5.inferiumessence.title")
+
+setIcon("mysticalagriculture:crafting")
+
+setTranslatedDescription("advancements.stage5.inferiumessence.description")
+
+addParent("triumph:stage5/saturn")
+setRequiresParents()
+
+setRequirements("any")
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("mysticalagriculture:crafting")
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

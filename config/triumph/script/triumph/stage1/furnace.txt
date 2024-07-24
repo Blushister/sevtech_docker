@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.stage1.furnace.title")
+
+setIcon("minecraft:furnace")
+
+setTranslatedDescription("advancements.stage1.furnace.description")
+
+addParent("triumph:stage1/crafting")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("minecraft:furnace", 0)
+
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

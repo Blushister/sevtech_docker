@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.mesh.title")
+
+setIcon("pickletweaks:grass_mesh")
+
+setTranslatedDescription("advancements.stage0.mesh.description")
+
+addParent("triumph:stage0/fiber")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("pickletweaks:grass_mesh")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.stage0.farmland.title")
+
+setIcon("minecraft:farmland")
+
+setTranslatedDescription("advancements.stage0.farmland.description")
+
+addParent("triumph:stage0/workblade")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("traded", "minecraft:villager_trade")
+criteria.setEntityType("minecraft:villager")
+criteria.setItem("minecraft:farmland")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

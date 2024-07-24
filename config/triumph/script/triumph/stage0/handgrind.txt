@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage0.handgrind.title")
+
+setIcon("horsepower:hand_grindstone")
+
+setTranslatedDescription("advancements.stage0.handgrind.description")
+
+addParent("triumph:stage0/workstump")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("horsepower:hand_grindstone")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

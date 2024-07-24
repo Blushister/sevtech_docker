@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.netherwart.title")
+
+setIcon("minecraft:nether_wart", 0)
+
+setTranslatedDescription("advancements.stage3.netherwart.description")
+
+addParent("triumph:stage3/netherexbiome")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:nether_wart", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

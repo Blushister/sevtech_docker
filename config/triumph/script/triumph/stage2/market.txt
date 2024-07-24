@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.market.title")
+
+setIcon("farmingforblockheads:market")
+
+setTranslatedDescription("advancements.stage2.market.description")
+
+addParent("triumph:stage2/gold")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("farmingforblockheads:market")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.axle.title")
+
+setIcon("betterwithmods:wooden_axle")
+
+setTranslatedDescription("advancements.stage1.axle.description")
+
+addParent("triumph:stage1/blackquartz")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("betterwithmods:wooden_axle")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

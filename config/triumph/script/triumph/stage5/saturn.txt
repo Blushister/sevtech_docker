@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.saturn.title")
+
+setIcon("actuallyadditions:item_misc", 6)
+
+setTranslatedDescription("advancements.stage5.saturn.description")
+
+addParent("triumph:stage5/mars")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("entered_nether", "minecraft:inventory_changed")
+criteria.setItem("extraplanets:saturn", 0)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

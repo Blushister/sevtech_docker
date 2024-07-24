@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.stage0.mill.title")
+
+setIcon("betterwithmods:single_machine")
+
+setTranslatedDescription("advancements.stage0.mill.description")
+
+addParent("triumph:stage0/gear")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("betterwithmods:single_machine")
+
+//Rewards
+setRewardExperience(4)
+setRewardItem("betterwithmods:manual", 0, 1)
+
+visibleIf("triumph:stage0/root")

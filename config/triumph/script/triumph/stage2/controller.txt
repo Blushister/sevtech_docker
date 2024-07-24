@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.controller.title")
+
+setIcon("tconstruct:smeltery_controller")
+
+setTranslatedDescription("advancements.stage2.controller.description")
+
+addParent("triumph:stage2/betweenlands")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("placedDirt", "minecraft:placed_block")
+criteria.setBlock("tconstruct:smeltery_controller")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

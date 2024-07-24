@@ -1,0 +1,29 @@
+setTranslatedTitle("advancements.stage1.copper.title")
+
+setIcon("immersiveengineering:metal")
+
+setTranslatedDescription("advancements.stage1.copper.description")
+
+addParent("triumph:stage1/prospector")
+setRequiresParents()
+
+setFrameType("Goal")
+
+setRequirements("any")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria1 = addCriteria("brokeLog1", "triumph:player_break_block")
+criteria1.setBlock("geolosys:ore", 2)
+
+criteria2 = addCriteria("brokeLog2", "triumph:player_break_block")
+criteria2.setBlock("geolosys:ore", 3)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

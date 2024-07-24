@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.launchpad.title")
+
+setIcon("galacticraftcore:landing_pad", 0)
+
+setTranslatedDescription("advancements.stage4.launchpad.description")
+
+addParent("triumph:stage4/nasaworkbench")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("galacticraftcore:landing_pad", 0)
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

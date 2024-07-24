@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.huntingdim.title")
+
+setIcon("huntingdim:frame", 0)
+
+setTranslatedDescription("advancements.stage1.huntingdim.description")
+
+addParent("triumph:stage1/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("huntingdim:frame", 0)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

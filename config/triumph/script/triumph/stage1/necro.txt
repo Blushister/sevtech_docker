@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage1.necro.title")
+
+setIcon("abyssalcraft:necronomicon")
+
+setTranslatedDescription("advancements.stage1.necro.description")
+
+addParent("triumph:stage1/bronze")
+setRequiresParents()
+
+setFrameType("Goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("abyssalcraft:necronomicon")
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

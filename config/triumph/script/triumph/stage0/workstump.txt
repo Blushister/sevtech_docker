@@ -1,0 +1,26 @@
+setTranslatedTitle("advancements.stage0.workstump.title")
+
+setIcon("primal_tech:work_stump")
+
+setTranslatedDescription("advancements.stage0.workstump.description")
+
+addParent("triumph:stage0/collectplank")
+setRequiresParents()
+
+setFrameType("challenge")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("primal_tech:work_stump")
+
+//Rewards
+setRewardFunction("triumph:stage-0_trigger")
+setRewardItem("primal_tech:rock", 0, 1)
+setRewardExperience(4)
+
+visibleIf("triumph:stage0/root")

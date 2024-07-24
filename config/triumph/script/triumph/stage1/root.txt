@@ -1,0 +1,14 @@
+setTranslatedTitle("advancements.stage1.root.title")
+
+setIcon("progressiontweaks:stone_hammer")
+
+setTranslatedDescription("advancements.stage1.root.description")
+
+setBackground("mekanism:textures/blocks/tinore.png")
+
+setShowToast(false)
+
+setAnnounceToChat(false)
+
+criteria = addCriteria("completedStage0", "triumph:completed_advancement")
+criteria.setString("triumph:stage0/melter")

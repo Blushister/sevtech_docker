@@ -1,0 +1,25 @@
+setTranslatedTitle("advancements.stage2.stevescarts.title")
+
+setIcon("stevescarts:cartmodule", 0)
+
+setTranslatedDescription("advancements.stage2.stevescarts.description")
+
+addParent("triumph:stage2/piston")
+setRequiresParents()
+
+setFrameType("challenge")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("stevescarts:cartmodule", 0)
+
+//Rewards
+setRewardExperience(8)
+setRewardFunction("triumph:stage-3_trigger")
+
+visibleIf("triumph:stage2/root")

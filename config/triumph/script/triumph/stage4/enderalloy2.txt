@@ -1,0 +1,24 @@
+setTranslatedTitle("advancements.stage4.enderalloy2.title")
+
+setIcon("enderutilities:enderpart", 1)
+
+setTranslatedDescription("advancements.stage4.enderalloy2.description")
+
+addParent("triumph:stage4/theend")
+setRequiresParents()
+
+setFrameType("Goal")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("enderutilities:enderpart", 1)
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

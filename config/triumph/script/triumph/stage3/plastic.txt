@@ -1,0 +1,26 @@
+setTranslatedTitle("advancements.stage3.plastic.title")
+
+setIcon("industrialforegoing:plastic")
+
+setTranslatedDescription("advancements.stage3.plastic.description")
+
+addParent("triumph:stage3/liquidplastic")
+setRequiresParents()
+
+setFrameType("challenge")
+
+setUncompletedIconColor(8947848)
+setCompletedIconColor(6570404)
+setUncompletedTitleColor(8947848)
+setCompletedTitleColor(6570404)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("industrialforegoing:plastic")
+
+//Rewards
+setRewardExperience(16)
+setRewardFunction("triumph:stage-4_trigger")
+setRewardFunction("triumph:advanced_mapping")
+
+visibleIf("triumph:stage3/root")

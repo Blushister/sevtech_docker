@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.endcrystal.title")
+
+setIcon("minecraft:end_crystal", 0)
+
+setTranslatedDescription("advancements.stage4.endcrystal.description")
+
+addParent("triumph:stage4/solidendereye")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:summoned_entity")
+criteria.setEntityType("minecraft:ender_dragon")
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

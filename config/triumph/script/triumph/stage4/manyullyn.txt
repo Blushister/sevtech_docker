@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.manyullyn.title")
+
+setIcon("tconstruct:metal", 2)
+
+setTranslatedDescription("advancements.stage4.manyullyn.description")
+
+addParent("triumph:stage4/cobalt")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("tconstruct:metal", 2)
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

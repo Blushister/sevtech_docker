@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage4.pressurechamberwall.title")
+
+setIcon("pneumaticcraft:pressure_chamber_wall")
+
+setTranslatedDescription("advancements.stage4.pressurechamberwall.description")
+
+addParent("triumph:stage4/compressediron")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("pneumaticcraft:pressure_chamber_wall")
+
+//Rewards
+setRewardExperience(12)
+
+visibleIf("triumph:stage4/root")

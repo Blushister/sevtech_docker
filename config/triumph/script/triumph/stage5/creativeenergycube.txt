@@ -1,0 +1,18 @@
+setTranslatedTitle("advancements.stage5.creativeenergycube.title")
+
+setIcon("mekanism:energycube", 0, {tier: 4, mekData: {energyStored: 1.7976931348623157E308}})
+
+setTranslatedDescription("advancements.stage5.creativeenergycube.description")
+
+addParent("triumph:stage5/ultimateingot")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.addItem("mekanism:energycube", 0, {tier: 4, mekData: {energyStored: 1.7976931348623157E308}})
+
+//Rewards
+setRewardExperience(30)
+setRewardFunction("triumph:prestige_add_200")
+
+visibleIf("triumph:stage5/root")

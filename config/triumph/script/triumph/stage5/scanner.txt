@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.scanner.title")
+
+setIcon("scannable:scanner", 0)
+
+setTranslatedDescription("advancements.stage5.scanner.description")
+
+addParent("triumph:stage5/root")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("scannable:scanner", 0)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

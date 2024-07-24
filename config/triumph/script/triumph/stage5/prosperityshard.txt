@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage5.prosperityshard.title")
+
+setIcon("mysticalagriculture:crafting", 5)
+
+setTranslatedDescription("advancements.stage5.prosperityshard.description")
+
+addParent("triumph:stage5/inferiumessence")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("mysticalagriculture:crafting", 5)
+
+//Rewards
+setRewardExperience(15)
+
+visibleIf("triumph:stage5/root")

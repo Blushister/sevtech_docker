@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.weedwoodsword.title")
+
+setIcon("thebetweenlands:weedwood_sword")
+
+setTranslatedDescription("advancements.stage2.weedwoodsword.description")
+
+addParent("triumph:stage2/betweenlands")
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("thebetweenlands:weedwood_sword")
+
+//Rewards
+setRewardExperience(8)
+setRewardItem("thebetweenlands:rotten_food", 0, 16)
+
+visibleIf("triumph:stage2/root")

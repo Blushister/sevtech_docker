@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.stepup.title")
+
+setIcon("cyclicmagic:food_step")
+
+setTranslatedDescription("advancements.stage1.stepup.description")
+
+addParent("triumph:stage1/bloodaltar")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("cyclicmagic:food_step")
+
+//Rewards
+setRewardExperience(1)
+
+visibleIf("triumph:stage1/root")

@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage2.wateringcan.title")
+
+setIcon("pickletweaks:watering_can")
+
+setTranslatedDescription("advancements.stage2.wateringcan.description")
+
+addParent("triumph:stage2/smeltertank")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("pickletweaks:watering_can")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage2/root")

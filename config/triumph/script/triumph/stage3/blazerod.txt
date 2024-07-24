@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.blazerod.title")
+
+setIcon("minecraft:blaze_rod", 0)
+
+setTranslatedDescription("advancements.stage3.blazerod.description")
+
+addParent("triumph:stage3/nether")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("minecraft:blaze_rod", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

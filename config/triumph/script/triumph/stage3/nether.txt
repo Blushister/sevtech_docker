@@ -1,0 +1,16 @@
+setTranslatedTitle("advancements.stage3.nether.title")
+
+setIcon("minecraft:netherrack")
+
+setTranslatedDescription("advancements.stage3.nether.description")
+
+addParent("triumph:stage3/root")
+
+//Criteria
+criteria = addCriteria("entered_nether", "minecraft:changed_dimension")
+criteria.setDimensionDestination("the_nether")
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")

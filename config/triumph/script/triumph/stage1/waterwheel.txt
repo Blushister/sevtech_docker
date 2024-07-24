@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage1.waterwheel.title")
+
+setIcon("betterwithmods:axle_generator", 1)
+
+setTranslatedDescription("advancements.stage1.waterwheel.description")
+
+addParent("triumph:stage1/axle")
+setRequiresParents()
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("betterwithmods:axle_generator", 1)
+
+//Rewards
+setRewardExperience(4)
+
+visibleIf("triumph:stage1/root")

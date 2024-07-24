@@ -1,0 +1,17 @@
+setTranslatedTitle("advancements.stage3.amethyst.title")
+
+setIcon("nex:amethyst_crystal")
+
+setTranslatedDescription("advancements.stage3.amethyst.description")
+
+addParent("triumph:stage3/nether")
+setRequiresParents()
+
+//Criteria
+criteria2 = addCriteria("hasRock2", "minecraft:inventory_changed")
+criteria2.setItem("nex:amethyst_crystal", 0)
+
+//Rewards
+setRewardExperience(8)
+
+visibleIf("triumph:stage3/root")
