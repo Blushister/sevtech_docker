@@ -55,13 +55,14 @@ Vous pouvez consulter les journaux du serveur pour vérifier qu'il fonctionne co
 
 ```bash
 docker logs -f my-sevtech-server
+```
 docker logs: Affiche les journaux d'un conteneur Docker.
 -f: Suit les journaux en temps réel. Cette option permet de voir les nouvelles entrées de journal au fur et à mesure qu'elles sont écrites.
 my-sevtech-server: Le nom ou l'ID du conteneur Docker dont vous souhaitez voir les journaux. Remplacez par le nom de votre conteneur si différent.
 Utilisez cette commande pour diagnostiquer des problèmes potentiels ou simplement pour surveiller les activités du serveur, telles que les connexions des joueurs et les événements du serveur.
 
 Cette section fournit les informations nécessaires pour accéder et suivre les journaux du serveur Minecraft, vous permettant ainsi de surveiller l'état du serveur et de diagnostiquer d'éventuels problèmes.
-```
+
 
 ## Licence
 
